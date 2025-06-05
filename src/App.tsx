@@ -1,31 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
-import { KarmaProvider } from './context/KarmaContext';
-import AppLayout from './components/layout/AppLayout';
-import HomePage from './pages/HomePage';
-import MarketplacePage from './pages/MarketplacePage';
-import LeaderboardPage from './pages/LeaderboardPage';
-import ProfilePage from './pages/ProfilePage';
-import NotFoundPage from './pages/NotFoundPage';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <AuthProvider>
-      <KarmaProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<AppLayout />}>
-              <Route index element={<HomePage />} />
-              <Route path="marketplace" element={<MarketplacePage />} />
-              <Route path="leaderboard" element={<LeaderboardPage />} />
-              <Route path="profile" element={<ProfilePage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Route>
-          </Routes>
-        </Router>
-      </KarmaProvider>
-    </AuthProvider>
+    <div className="bg-gray-50 min-h-screen">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
