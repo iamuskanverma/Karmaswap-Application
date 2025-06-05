@@ -27,21 +27,21 @@ const About = () => {
                   <h4 className="font-semibold">Education</h4>
                 </div>
                 <div className="ml-7">
-                  <p className="font-medium">B.Tech in Computer Science</p>
-                  <p className="text-gray-600">Your University Name</p>
-                  <p className="text-gray-500">2019 - 2023</p>
+                  <p className="font-medium">Bacholar in Computer Science</p>
+                  <p className="text-gray-600">Ram Manohar Lohia Awadh University</p>
+                  <p className="text-gray-500">2023 - 2026</p>
                 </div>
               </div>
               <div>
                 <div className="flex items-center mb-3">
                   <Briefcase className="h-5 w-5 text-primary-600 mr-2" />
                   <h4 className="font-semibold">Experience</h4>
-                </div>
-                <div className="ml-7">
+               </div>
+                <!-- <div className="ml-7">
                   <p className="font-medium">Java Developer</p>
                   <p className="text-gray-600">Company Name</p>
                   <p className="text-gray-500">2023 - Present</p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
